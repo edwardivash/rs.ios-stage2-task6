@@ -23,7 +23,8 @@
 		2F87107B24A0837E001CF26B /* TabBarController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F87107924A0837E001CF26B /* TabBarController.xib */; };
 		2F87107E24A09911001CF26B /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F87107D24A09911001CF26B /* TableViewCell.m */; };
 		2F87108324A09DF2001CF26B /* TableViewData.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F87108224A09DF2001CF26B /* TableViewData.m */; };
-		2F87108624A0A244001CF26B /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F87108524A0A244001CF26B /* CollectionViewCell.m */; };
+		2F87108A24A0B24C001CF26B /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F87108824A0B24C001CF26B /* CollectionViewCell.m */; };
+		2F87108B24A0B24C001CF26B /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F87108924A0B24C001CF26B /* CollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,8 +55,9 @@
 		2F87107D24A09911001CF26B /* TableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
 		2F87108124A09DF2001CF26B /* TableViewData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewData.h; sourceTree = "<group>"; };
 		2F87108224A09DF2001CF26B /* TableViewData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewData.m; sourceTree = "<group>"; };
-		2F87108424A0A244001CF26B /* CollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
-		2F87108524A0A244001CF26B /* CollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
+		2F87108724A0B24C001CF26B /* CollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
+		2F87108824A0B24C001CF26B /* CollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
+		2F87108924A0B24C001CF26B /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,8 +142,9 @@
 				2F3A099A249F8A78000DCAC4 /* TabBarViewController2.h */,
 				2F3A099B249F8A79000DCAC4 /* TabBarViewController2.m */,
 				2F3A099C249F8A79000DCAC4 /* TabBarViewController2.xib */,
-				2F87108424A0A244001CF26B /* CollectionViewCell.h */,
-				2F87108524A0A244001CF26B /* CollectionViewCell.m */,
+				2F87108724A0B24C001CF26B /* CollectionViewCell.h */,
+				2F87108824A0B24C001CF26B /* CollectionViewCell.m */,
+				2F87108924A0B24C001CF26B /* CollectionViewCell.xib */,
 			);
 			path = "Third screen";
 			sourceTree = "<group>";
@@ -234,6 +237,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F3A09A3249F8A8A000DCAC4 /* TabBarViewController3.xib in Resources */,
+				2F87108B24A0B24C001CF26B /* CollectionViewCell.xib in Resources */,
 				2F87107B24A0837E001CF26B /* TabBarController.xib in Resources */,
 				2F3A0974249F563A000DCAC4 /* FirstViewController.xib in Resources */,
 				2F3A099E249F8A79000DCAC4 /* TabBarViewController2.xib in Resources */,
@@ -258,7 +262,7 @@
 				2F3A099D249F8A79000DCAC4 /* TabBarViewController2.m in Sources */,
 				2F87107A24A0837E001CF26B /* TabBarController.m in Sources */,
 				2F3A097D249F6909000DCAC4 /* FirstViewController.m in Sources */,
-				2F87108624A0A244001CF26B /* CollectionViewCell.m in Sources */,
+				2F87108A24A0B24C001CF26B /* CollectionViewCell.m in Sources */,
 				2F3A0965249E0505000DCAC4 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

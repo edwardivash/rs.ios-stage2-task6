@@ -20,11 +20,9 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Are you ready?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lti-rF-xLD">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Are you ready?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lti-rF-xLD">
                     <rect key="frame" x="127.5" y="135" width="159" height="29"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="159" id="i0A-Ug-Cmk"/>
-                    </constraints>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
@@ -40,11 +38,6 @@
                 </button>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-            <constraints>
-                <constraint firstItem="lti-rF-xLD" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="Eo4-vS-jYu"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="lti-rF-xLD" secondAttribute="trailing" constant="127.5" id="Wrm-Jx-O4o"/>
-                <constraint firstItem="lti-rF-xLD" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="91" id="dfu-Yo-A4y"/>
-            </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <point key="canvasLocation" x="137.68115942028987" y="130.58035714285714"/>
         </view>

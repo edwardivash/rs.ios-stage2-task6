@@ -6,6 +6,7 @@
 //  Copyright © 2020 Eduard Ivash. All rights reserved.
 //
 
+#import <QuartzCore/QuartzCore.h>
 #import "FirstViewController.h"
 #import "UIColor+ColorFromHex.h"
 #import "TabBarController.h"
@@ -26,6 +27,7 @@
     [self drawCircle];
     [self drawSquare];
     [self drawTriangle];
+    
     
 }
 
@@ -58,16 +60,13 @@
     [circle setBackgroundColor:[UIColor colorWithHexString:@"0xEE686A"]];
     [self.view addSubview:circle];
     
-    [UIView animateWithDuration:3 animations:^{
-        const CGFloat scale = 1.2;
-        [circle setTransform:CGAffineTransformMakeScale(scale, scale)];
-    }];
-    
-    self.view.translatesAutoresizingMaskIntoConstraints = false;
-
-    [NSLayoutConstraint activateConstraints:@[
-        
-    ]];
+    // Animation for circle
+    [UIView animateWithDuration:0.5
+         delay:0.0
+       options:UIViewAnimationOptionAutoreverse | UIViewAnimationOptionRepeat | UIViewAnimationOptionCurveEaseInOut
+    animations:^{
+        [circle setTransform:CGAffineTransformMakeScale(1.2, 1.2)];
+    }completion:NULL];
     
 }
 
@@ -78,6 +77,16 @@
     [square.layer setCornerRadius:2.0];
     [square setBackgroundColor:[UIColor colorWithHexString:@"0x29C2D1"]];
     [self.view addSubview:square];
+    
+    // Animation for square
+    [UIView animateWithDuration:0.5
+          delay:0.0
+        options:UIViewAnimationOptionAutoreverse | UIViewAnimationOptionRepeat | UIViewAnimationOptionCurveEaseInOut
+     animations:^{
+         square.frame = CGRectMake(150, 237, 70, 70);
+     }
+     completion:NULL];
+    
 }
 
 // Triangle drawing
@@ -101,6 +110,22 @@
     shapeLayer.fillColor = [UIColor colorWithHexString:@"0x34C1A1"].CGColor;
     
     [triangle.layer addSublayer:shapeLayer];
+    
+    // Start rotation animation for triangle
+    [self runSpinAnimationOnView:triangle duration:1 rotations:1 repeat:1];
+    
+}
+
+// Rotation method for triangle
+- (void) runSpinAnimationOnView:(UIView*)view duration:(CGFloat)duration rotations:(CGFloat)rotations repeat:(float)repeat {
+    CABasicAnimation* rotationAnimation;
+    rotationAnimation = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
+    rotationAnimation.toValue = [NSNumber numberWithFloat: M_PI * 2.0 /* full rotation*/ * rotations * duration ];
+    rotationAnimation.duration = duration;
+    rotationAnimation.cumulative = YES;
+    rotationAnimation.repeatCount = repeat ? HUGE_VALF : 0;
+
+    [view.layer addAnimation:rotationAnimation forKey:@"rotationAnimation"];
 }
 
 -(void)goToSecondScreen {
@@ -108,12 +133,6 @@
     [secondScreen setSelectedIndex:0];
     [self.navigationController pushViewController:secondScreen animated:YES];
 }
-
-
-
-
-
-
 
 
 @end

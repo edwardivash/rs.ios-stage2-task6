@@ -10,6 +10,10 @@
 
 @implementation CollectionViewCell
 
+- (void)awakeFromNib {
+    [super awakeFromNib];
+}
+
 - (instancetype)initWithCoder:(NSCoder *)coder
 {
     self = [super initWithCoder:coder];
@@ -41,4 +45,5 @@
         [self.imageView.bottomAnchor constraintEqualToAnchor:self.bottomAnchor]
     ]];
 }
+
 @end

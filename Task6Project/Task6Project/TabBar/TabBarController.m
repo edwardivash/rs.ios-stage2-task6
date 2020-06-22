@@ -43,7 +43,6 @@
     thirdTab.tabBarItem = thirdItem;
     [self.navigationController pushViewController:thirdTab animated:NO];
     
-    
     self.viewControllers = @[firstTab,secondTab,thirdTab];
     [[UITabBar appearance] setTintColor:[UIColor colorWithHexString:@"0x101010"]];
 
