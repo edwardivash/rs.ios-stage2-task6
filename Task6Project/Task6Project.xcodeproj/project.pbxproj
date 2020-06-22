@@ -8,24 +8,54 @@
 
 /* Begin PBXBuildFile section */
 		2F3A0954249E0501000DCAC4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F3A0953249E0501000DCAC4 /* AppDelegate.m */; };
-		2F3A095A249E0502000DCAC4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F3A0959249E0502000DCAC4 /* ViewController.m */; };
-		2F3A095D249E0502000DCAC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F3A095B249E0502000DCAC4 /* Main.storyboard */; };
 		2F3A095F249E0505000DCAC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F3A095E249E0505000DCAC4 /* Assets.xcassets */; };
-		2F3A0962249E0505000DCAC4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F3A0960249E0505000DCAC4 /* LaunchScreen.storyboard */; };
 		2F3A0965249E0505000DCAC4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F3A0964249E0505000DCAC4 /* main.m */; };
+		2F3A0974249F563A000DCAC4 /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F3A0973249F563A000DCAC4 /* FirstViewController.xib */; };
+		2F3A097D249F6909000DCAC4 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F3A097C249F6909000DCAC4 /* FirstViewController.m */; };
+		2F3A098F249F8703000DCAC4 /* UIColor+ColorFromHex.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F3A098E249F8703000DCAC4 /* UIColor+ColorFromHex.m */; };
+		2F3A0995249F8A56000DCAC4 /* TabBarViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F3A0993249F8A56000DCAC4 /* TabBarViewController1.m */; };
+		2F3A0996249F8A56000DCAC4 /* TabBarViewController1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F3A0994249F8A56000DCAC4 /* TabBarViewController1.xib */; };
+		2F3A099D249F8A79000DCAC4 /* TabBarViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F3A099B249F8A79000DCAC4 /* TabBarViewController2.m */; };
+		2F3A099E249F8A79000DCAC4 /* TabBarViewController2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F3A099C249F8A79000DCAC4 /* TabBarViewController2.xib */; };
+		2F3A09A2249F8A8A000DCAC4 /* TabBarViewController3.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F3A09A0249F8A8A000DCAC4 /* TabBarViewController3.m */; };
+		2F3A09A3249F8A8A000DCAC4 /* TabBarViewController3.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F3A09A1249F8A8A000DCAC4 /* TabBarViewController3.xib */; };
+		2F87107A24A0837E001CF26B /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F87107824A0837E001CF26B /* TabBarController.m */; };
+		2F87107B24A0837E001CF26B /* TabBarController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F87107924A0837E001CF26B /* TabBarController.xib */; };
+		2F87107E24A09911001CF26B /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F87107D24A09911001CF26B /* TableViewCell.m */; };
+		2F87108324A09DF2001CF26B /* TableViewData.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F87108224A09DF2001CF26B /* TableViewData.m */; };
+		2F87108624A0A244001CF26B /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F87108524A0A244001CF26B /* CollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2F3A094F249E0501000DCAC4 /* Task6Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Task6Project.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F3A0952249E0501000DCAC4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2F3A0953249E0501000DCAC4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		2F3A0958249E0502000DCAC4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		2F3A0959249E0502000DCAC4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		2F3A095C249E0502000DCAC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2F3A095E249E0505000DCAC4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		2F3A0961249E0505000DCAC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2F3A0963249E0505000DCAC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2F3A0964249E0505000DCAC4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2F3A0973249F563A000DCAC4 /* FirstViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstViewController.xib; sourceTree = "<group>"; };
+		2F3A097B249F6909000DCAC4 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		2F3A097C249F6909000DCAC4 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		2F3A098D249F8703000DCAC4 /* UIColor+ColorFromHex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+ColorFromHex.h"; sourceTree = "<group>"; };
+		2F3A098E249F8703000DCAC4 /* UIColor+ColorFromHex.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ColorFromHex.m"; sourceTree = "<group>"; };
+		2F3A0992249F8A56000DCAC4 /* TabBarViewController1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabBarViewController1.h; sourceTree = "<group>"; };
+		2F3A0993249F8A56000DCAC4 /* TabBarViewController1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabBarViewController1.m; sourceTree = "<group>"; };
+		2F3A0994249F8A56000DCAC4 /* TabBarViewController1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TabBarViewController1.xib; sourceTree = "<group>"; };
+		2F3A099A249F8A78000DCAC4 /* TabBarViewController2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabBarViewController2.h; sourceTree = "<group>"; };
+		2F3A099B249F8A79000DCAC4 /* TabBarViewController2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabBarViewController2.m; sourceTree = "<group>"; };
+		2F3A099C249F8A79000DCAC4 /* TabBarViewController2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TabBarViewController2.xib; sourceTree = "<group>"; };
+		2F3A099F249F8A8A000DCAC4 /* TabBarViewController3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabBarViewController3.h; sourceTree = "<group>"; };
+		2F3A09A0249F8A8A000DCAC4 /* TabBarViewController3.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabBarViewController3.m; sourceTree = "<group>"; };
+		2F3A09A1249F8A8A000DCAC4 /* TabBarViewController3.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TabBarViewController3.xib; sourceTree = "<group>"; };
+		2F87107724A0837E001CF26B /* TabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabBarController.h; sourceTree = "<group>"; };
+		2F87107824A0837E001CF26B /* TabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabBarController.m; sourceTree = "<group>"; };
+		2F87107924A0837E001CF26B /* TabBarController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TabBarController.xib; sourceTree = "<group>"; };
+		2F87107C24A09911001CF26B /* TableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		2F87107D24A09911001CF26B /* TableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
+		2F87108124A09DF2001CF26B /* TableViewData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewData.h; sourceTree = "<group>"; };
+		2F87108224A09DF2001CF26B /* TableViewData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewData.m; sourceTree = "<group>"; };
+		2F87108424A0A244001CF26B /* CollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
+		2F87108524A0A244001CF26B /* CollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,17 +88,92 @@
 		2F3A0951249E0501000DCAC4 /* Task6Project */ = {
 			isa = PBXGroup;
 			children = (
+				2F3A0990249F8895000DCAC4 /* Support */,
+				2F3A09A8249F8D82000DCAC4 /* First screen */,
+				2F3A09AE249FD52F000DCAC4 /* TabBar */,
+				2F3A09A4249F8D38000DCAC4 /* Second screen */,
+				2F3A09A6249F8D5C000DCAC4 /* Third screen */,
+				2F3A09A7249F8D68000DCAC4 /* Fourth screen */,
+				2F3A0991249F88AE000DCAC4 /* Categories */,
+			);
+			path = Task6Project;
+			sourceTree = "<group>";
+		};
+		2F3A0990249F8895000DCAC4 /* Support */ = {
+			isa = PBXGroup;
+			children = (
 				2F3A0952249E0501000DCAC4 /* AppDelegate.h */,
 				2F3A0953249E0501000DCAC4 /* AppDelegate.m */,
-				2F3A0958249E0502000DCAC4 /* ViewController.h */,
-				2F3A0959249E0502000DCAC4 /* ViewController.m */,
-				2F3A095B249E0502000DCAC4 /* Main.storyboard */,
 				2F3A095E249E0505000DCAC4 /* Assets.xcassets */,
-				2F3A0960249E0505000DCAC4 /* LaunchScreen.storyboard */,
 				2F3A0963249E0505000DCAC4 /* Info.plist */,
 				2F3A0964249E0505000DCAC4 /* main.m */,
 			);
-			path = Task6Project;
+			path = Support;
+			sourceTree = "<group>";
+		};
+		2F3A0991249F88AE000DCAC4 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				2F3A098D249F8703000DCAC4 /* UIColor+ColorFromHex.h */,
+				2F3A098E249F8703000DCAC4 /* UIColor+ColorFromHex.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		2F3A09A4249F8D38000DCAC4 /* Second screen */ = {
+			isa = PBXGroup;
+			children = (
+				2F3A0992249F8A56000DCAC4 /* TabBarViewController1.h */,
+				2F3A0993249F8A56000DCAC4 /* TabBarViewController1.m */,
+				2F3A0994249F8A56000DCAC4 /* TabBarViewController1.xib */,
+				2F87107C24A09911001CF26B /* TableViewCell.h */,
+				2F87107D24A09911001CF26B /* TableViewCell.m */,
+				2F87108124A09DF2001CF26B /* TableViewData.h */,
+				2F87108224A09DF2001CF26B /* TableViewData.m */,
+			);
+			path = "Second screen";
+			sourceTree = "<group>";
+		};
+		2F3A09A6249F8D5C000DCAC4 /* Third screen */ = {
+			isa = PBXGroup;
+			children = (
+				2F3A099A249F8A78000DCAC4 /* TabBarViewController2.h */,
+				2F3A099B249F8A79000DCAC4 /* TabBarViewController2.m */,
+				2F3A099C249F8A79000DCAC4 /* TabBarViewController2.xib */,
+				2F87108424A0A244001CF26B /* CollectionViewCell.h */,
+				2F87108524A0A244001CF26B /* CollectionViewCell.m */,
+			);
+			path = "Third screen";
+			sourceTree = "<group>";
+		};
+		2F3A09A7249F8D68000DCAC4 /* Fourth screen */ = {
+			isa = PBXGroup;
+			children = (
+				2F3A099F249F8A8A000DCAC4 /* TabBarViewController3.h */,
+				2F3A09A0249F8A8A000DCAC4 /* TabBarViewController3.m */,
+				2F3A09A1249F8A8A000DCAC4 /* TabBarViewController3.xib */,
+			);
+			path = "Fourth screen";
+			sourceTree = "<group>";
+		};
+		2F3A09A8249F8D82000DCAC4 /* First screen */ = {
+			isa = PBXGroup;
+			children = (
+				2F3A097B249F6909000DCAC4 /* FirstViewController.h */,
+				2F3A097C249F6909000DCAC4 /* FirstViewController.m */,
+				2F3A0973249F563A000DCAC4 /* FirstViewController.xib */,
+			);
+			path = "First screen";
+			sourceTree = "<group>";
+		};
+		2F3A09AE249FD52F000DCAC4 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				2F87107724A0837E001CF26B /* TabBarController.h */,
+				2F87107824A0837E001CF26B /* TabBarController.m */,
+				2F87107924A0837E001CF26B /* TabBarController.xib */,
+			);
+			path = TabBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,9 +233,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F3A0962249E0505000DCAC4 /* LaunchScreen.storyboard in Resources */,
+				2F3A09A3249F8A8A000DCAC4 /* TabBarViewController3.xib in Resources */,
+				2F87107B24A0837E001CF26B /* TabBarController.xib in Resources */,
+				2F3A0974249F563A000DCAC4 /* FirstViewController.xib in Resources */,
+				2F3A099E249F8A79000DCAC4 /* TabBarViewController2.xib in Resources */,
+				2F3A0996249F8A56000DCAC4 /* TabBarViewController1.xib in Resources */,
 				2F3A095F249E0505000DCAC4 /* Assets.xcassets in Resources */,
-				2F3A095D249E0502000DCAC4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,32 +249,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F3A095A249E0502000DCAC4 /* ViewController.m in Sources */,
+				2F3A0995249F8A56000DCAC4 /* TabBarViewController1.m in Sources */,
 				2F3A0954249E0501000DCAC4 /* AppDelegate.m in Sources */,
+				2F3A098F249F8703000DCAC4 /* UIColor+ColorFromHex.m in Sources */,
+				2F3A09A2249F8A8A000DCAC4 /* TabBarViewController3.m in Sources */,
+				2F87107E24A09911001CF26B /* TableViewCell.m in Sources */,
+				2F87108324A09DF2001CF26B /* TableViewData.m in Sources */,
+				2F3A099D249F8A79000DCAC4 /* TabBarViewController2.m in Sources */,
+				2F87107A24A0837E001CF26B /* TabBarController.m in Sources */,
+				2F3A097D249F6909000DCAC4 /* FirstViewController.m in Sources */,
+				2F87108624A0A244001CF26B /* CollectionViewCell.m in Sources */,
 				2F3A0965249E0505000DCAC4 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		2F3A095B249E0502000DCAC4 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2F3A095C249E0502000DCAC4 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		2F3A0960249E0505000DCAC4 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2F3A0961249E0505000DCAC4 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		2F3A0966249E0505000DCAC4 /* Debug */ = {
@@ -285,7 +382,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3M25X6SA3H;
-				INFOPLIST_FILE = Task6Project/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Task6Project/Support/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +399,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3M25X6SA3H;
-				INFOPLIST_FILE = Task6Project/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Task6Project/Support/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
