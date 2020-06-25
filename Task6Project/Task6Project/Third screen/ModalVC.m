@@ -10,7 +10,7 @@
 #import "UIColor+ColorFromHex.h"
 
 @interface ModalVC ()
-
+@property (nonatomic,strong)UIImageView *imgView;
 @end
 
 @implementation ModalVC
@@ -28,6 +28,7 @@
     self.view.backgroundColor = [UIColor whiteColor];
     [self.navigationItem setHidesBackButton:YES];
     [self customButton];
+    [self setupImgView];
 
 }
 
@@ -50,6 +51,23 @@
 
 -(void)xButtonSelector {
     [self.navigationController popViewControllerAnimated:YES];
+}
+
+-(void)setupImgView {
+    UIImage *img = UIGraphicsGetImageFromCurrentImageContext();
+    self.imgView = [[UIImageView alloc]init];
+    self.imgView.image = img;
+    [self.view addSubview:self.imgView];
+    self.imgView.translatesAutoresizingMaskIntoConstraints = NO;
+    [self.imgView setContentMode:UIViewContentModeScaleAspectFill];
+    
+    [NSLayoutConstraint activateConstraints:@[
+        [self.imgView.topAnchor constraintEqualToAnchor:self.view.topAnchor],
+        [self.imgView.bottomAnchor constraintEqualToAnchor:self.view.bottomAnchor],
+        [self.imgView.leadingAnchor constraintEqualToAnchor:self.view.leadingAnchor],
+        [self.imgView.trailingAnchor constraintEqualToAnchor:self.view.trailingAnchor],
+    ]];
+    
 }
 
 

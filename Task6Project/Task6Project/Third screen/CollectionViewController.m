@@ -34,7 +34,7 @@
 -(void)setupCollectionView {
     
     UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc]init];
-    layout.itemSize = CGSizeMake(60, 60);
+    layout.itemSize = CGSizeMake(50, 50);
     [layout setScrollDirection:UICollectionViewScrollDirectionVertical];
     
     self.collectionView = [[UICollectionView alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height) collectionViewLayout:layout];
@@ -97,6 +97,10 @@
     });
 }
 
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
+    CGFloat width = self.view.frame.size.width / 3 - 10;
+    return CGSizeMake(width, width);
+}
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     ImgCollectionViewCell *cell = [[ImgCollectionViewCell alloc]init];

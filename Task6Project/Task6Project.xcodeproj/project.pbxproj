@@ -22,8 +22,6 @@
 		2F87108324A09DF2001CF26B /* TableViewData.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F87108224A09DF2001CF26B /* TableViewData.m */; };
 		2F87109224A110F2001CF26B /* TabBarTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F87109024A110F2001CF26B /* TabBarTableViewCell.m */; };
 		2F87109324A110F2001CF26B /* TabBarTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F87109124A110F2001CF26B /* TabBarTableViewCell.xib */; };
-		2F8710F524A132AC001CF26B /* FourthScreenTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F8710F324A132AC001CF26B /* FourthScreenTableViewCell.m */; };
-		2F8710F624A132AC001CF26B /* FourthScreenTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F8710F424A132AC001CF26B /* FourthScreenTableViewCell.xib */; };
 		2F87111024A28EBC001CF26B /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F87110E24A28EBC001CF26B /* InfoViewController.m */; };
 		2F87111124A28EBC001CF26B /* InfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F87110F24A28EBC001CF26B /* InfoViewController.xib */; };
 		2F87111D24A3B3CF001CF26B /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F87111C24A3B3CF001CF26B /* CollectionViewController.m */; };
@@ -57,9 +55,6 @@
 		2F87108F24A110F2001CF26B /* TabBarTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabBarTableViewCell.h; sourceTree = "<group>"; };
 		2F87109024A110F2001CF26B /* TabBarTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabBarTableViewCell.m; sourceTree = "<group>"; };
 		2F87109124A110F2001CF26B /* TabBarTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TabBarTableViewCell.xib; sourceTree = "<group>"; };
-		2F8710F224A132AC001CF26B /* FourthScreenTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FourthScreenTableViewCell.h; sourceTree = "<group>"; };
-		2F8710F324A132AC001CF26B /* FourthScreenTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FourthScreenTableViewCell.m; sourceTree = "<group>"; };
-		2F8710F424A132AC001CF26B /* FourthScreenTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FourthScreenTableViewCell.xib; sourceTree = "<group>"; };
 		2F87110D24A28EBC001CF26B /* InfoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
 		2F87110E24A28EBC001CF26B /* InfoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
 		2F87110F24A28EBC001CF26B /* InfoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfoViewController.xib; sourceTree = "<group>"; };
@@ -168,9 +163,6 @@
 				2F3A099F249F8A8A000DCAC4 /* TabBarViewController3.h */,
 				2F3A09A0249F8A8A000DCAC4 /* TabBarViewController3.m */,
 				2F3A09A1249F8A8A000DCAC4 /* TabBarViewController3.xib */,
-				2F8710F224A132AC001CF26B /* FourthScreenTableViewCell.h */,
-				2F8710F324A132AC001CF26B /* FourthScreenTableViewCell.m */,
-				2F8710F424A132AC001CF26B /* FourthScreenTableViewCell.xib */,
 			);
 			path = "Fourth screen";
 			sourceTree = "<group>";
@@ -266,7 +258,6 @@
 				2F3A09A3249F8A8A000DCAC4 /* TabBarViewController3.xib in Resources */,
 				2F87107B24A0837E001CF26B /* TabBarController.xib in Resources */,
 				2F3A0974249F563A000DCAC4 /* FirstViewController.xib in Resources */,
-				2F8710F624A132AC001CF26B /* FourthScreenTableViewCell.xib in Resources */,
 				2F3A0996249F8A56000DCAC4 /* TabBarViewController1.xib in Resources */,
 				2F3A095F249E0505000DCAC4 /* Assets.xcassets in Resources */,
 				2F87109324A110F2001CF26B /* TabBarTableViewCell.xib in Resources */,
@@ -281,7 +272,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F3A0995249F8A56000DCAC4 /* TabBarViewController1.m in Sources */,
-				2F8710F524A132AC001CF26B /* FourthScreenTableViewCell.m in Sources */,
 				2F3A0954249E0501000DCAC4 /* AppDelegate.m in Sources */,
 				2F3A098F249F8703000DCAC4 /* UIColor+ColorFromHex.m in Sources */,
 				2F87109224A110F2001CF26B /* TabBarTableViewCell.m in Sources */,

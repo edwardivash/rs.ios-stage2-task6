@@ -10,7 +10,6 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TabBarViewController3">
             <connections>
-                <outlet property="tableView" destination="c7X-7O-G6M" id="f0d-eS-EU2"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -18,18 +17,7 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="c7X-7O-G6M">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                </tableView>
-            </subviews>
             <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-            <constraints>
-                <constraint firstItem="c7X-7O-G6M" firstAttribute="bottom" secondItem="i5M-Pr-FkT" secondAttribute="bottom" id="0YN-IN-Z5q"/>
-                <constraint firstAttribute="trailing" secondItem="c7X-7O-G6M" secondAttribute="trailing" id="Cx9-vL-air"/>
-                <constraint firstItem="c7X-7O-G6M" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="QWE-18-AYz"/>
-                <constraint firstAttribute="top" secondItem="c7X-7O-G6M" secondAttribute="top" id="UKp-IH-nhv"/>
-            </constraints>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
             <point key="canvasLocation" x="137.68115942028987" y="126.5625"/>
         </view>

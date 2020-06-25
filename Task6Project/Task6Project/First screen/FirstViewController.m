@@ -60,6 +60,7 @@
     self.startButton.layer.cornerRadius = self.startButton.frame.size.height / 2;
     self.startButton.tintColor = [UIColor colorWithHexString:@"0x101010"];
     self.startButton.backgroundColor = [UIColor colorWithHexString:@"0xF9CC78"];
+    self.startButton.titleLabel.font = [UIFont systemFontOfSize:20 weight:UIFontWeightMedium];
         [self.startButton addTarget:self action:@selector(goToSecondScreen) forControlEvents:UIControlEventTouchUpInside];
 }
 
