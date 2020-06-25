@@ -11,6 +11,11 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface TableViewData : NSObject
+@property (nonatomic, strong) NSString *title;
+@property (nonatomic, strong) NSString *type;
+@property (nonatomic, strong) NSString *size;
+
+-(instancetype)initWithTitle:(NSString *)title;
 
 @end
 

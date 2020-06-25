@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface TabBarViewController1 : UIViewController 
+@interface TabBarViewController1 : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
 @end
 

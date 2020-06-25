@@ -1,5 +1,5 @@
 //
-//  CollectionViewCell.h
+//  FourthScreenTableViewCell.h
 //  Task6Project
 //
 //  Created by Эдуард on 6/22/20.
@@ -10,9 +10,8 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface CollectionViewCell : UICollectionViewCell
+@interface FourthScreenTableViewCell : UITableViewCell <UITableViewDelegate, UITableViewDataSource>
 
-@property (nonatomic, strong) UIImageView *imageView;
 @end
 
 NS_ASSUME_NONNULL_END

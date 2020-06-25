@@ -15,6 +15,14 @@
 
 @property (strong, nonatomic) IBOutlet UILabel *readyLabel;
 @property (strong, nonatomic) IBOutlet UIButton *startButton;
+@property (strong, nonatomic) UIStackView *stackView;
+@property (strong, nonnull) UIView *circle;
+@property (strong, nonnull) UIView *square;
+@property (strong, nonnull) UIView *triangle;
+@property (strong, nonatomic) UIView *containerForCircle;
+@property (strong, nonatomic) UIView *containerForSquare;
+@property (strong, nonatomic) UIView *containerForTriangle;
+
 
 @end
 
@@ -24,18 +32,21 @@
     [super viewDidLoad];
     [self setupLabel];
     [self setupButton];
+    [self updateConstraints];
     [self drawCircle];
     [self drawSquare];
     [self drawTriangle];
-    
-    
 }
 
 // Hide navigation bar
 
 -(void)viewWillAppear:(BOOL)animated {
     [self.navigationController setNavigationBarHidden:YES];
+    self.title = @"";
+    self.view.backgroundColor = [UIColor whiteColor];
 }
+
+
 
 // Label setup
 
@@ -55,48 +66,50 @@
 // Circle drawing
 
 -(void)drawCircle {
-    UIView *circle = [[UIView alloc]initWithFrame:CGRectMake(50, 230, 70, 70)];
-    [circle.layer setCornerRadius:circle.frame.size.width / 2];
-    [circle setBackgroundColor:[UIColor colorWithHexString:@"0xEE686A"]];
-    [self.view addSubview:circle];
+    self.circle = [[UIView alloc]initWithFrame:CGRectMake(50, 230, 70, 70)];
+    [self.circle.layer setCornerRadius:self.circle.frame.size.width / 2];
+    [self.circle setBackgroundColor:[UIColor colorWithHexString:@"0xEE686A"]];
+    self.circle.translatesAutoresizingMaskIntoConstraints = false;
     
     // Animation for circle
     [UIView animateWithDuration:0.5
          delay:0.0
        options:UIViewAnimationOptionAutoreverse | UIViewAnimationOptionRepeat | UIViewAnimationOptionCurveEaseInOut
     animations:^{
-        [circle setTransform:CGAffineTransformMakeScale(1.2, 1.2)];
+        [self.circle setTransform:CGAffineTransformMakeScale(1.1, 1.1)];
     }completion:NULL];
     
+    [self.stackView addSubview:self.circle];
 }
 
 // Square drawing
 
 -(void)drawSquare {
-    UIView *square = [[UIView alloc]initWithFrame:CGRectMake(150, 230, 70, 70)];
-    [square.layer setCornerRadius:2.0];
-    [square setBackgroundColor:[UIColor colorWithHexString:@"0x29C2D1"]];
-    [self.view addSubview:square];
+    self.square = [[UIView alloc]initWithFrame:CGRectMake(150, 230, 70, 70)];
+    [self.square.layer setCornerRadius:2.0];
+    [self.square setBackgroundColor:[UIColor colorWithHexString:@"0x29C2D1"]];
+    self.square.translatesAutoresizingMaskIntoConstraints = false;
     
     // Animation for square
     [UIView animateWithDuration:0.5
           delay:0.0
         options:UIViewAnimationOptionAutoreverse | UIViewAnimationOptionRepeat | UIViewAnimationOptionCurveEaseInOut
      animations:^{
-         square.frame = CGRectMake(150, 237, 70, 70);
+         self.square.frame = CGRectMake(150, 237, 70, 70);
      }
      completion:NULL];
-    
+
+    [self.stackView addSubview:self.square];
+
 }
 
 // Triangle drawing
 
 -(void)drawTriangle {
     
-    UIView *triangle = [[UIView alloc]initWithFrame:CGRectMake(250, 230, 70, 70)];
-    [triangle.layer setCornerRadius:2.0];
-    [triangle setBackgroundColor:[UIColor clearColor]];
-    [self.view addSubview:triangle];
+    self.triangle = [[UIView alloc]initWithFrame:CGRectMake(250, 230, 70, 70)];
+    [self.triangle.layer setCornerRadius:2.0];
+    [self.triangle setBackgroundColor:[UIColor clearColor]];
     
     UIBezierPath* bezierPath = UIBezierPath.bezierPath;
     [bezierPath moveToPoint:CGPointMake(0, 70)];
@@ -105,14 +118,37 @@
     [bezierPath closePath];
 
     CAShapeLayer *shapeLayer = [CAShapeLayer layer];
-    shapeLayer.frame = triangle.bounds;
+    shapeLayer.frame = self.triangle.bounds;
     shapeLayer.path = bezierPath.CGPath;
     shapeLayer.fillColor = [UIColor colorWithHexString:@"0x34C1A1"].CGColor;
     
-    [triangle.layer addSublayer:shapeLayer];
+    self.triangle.translatesAutoresizingMaskIntoConstraints = false;
+    
+    [self.triangle.layer addSublayer:shapeLayer];
     
     // Start rotation animation for triangle
-    [self runSpinAnimationOnView:triangle duration:1 rotations:1 repeat:1];
+    [self runSpinAnimationOnView:self.triangle duration:1 rotations:1 repeat:1];
+    
+    [self.stackView addSubview:self.triangle];
+}
+
+-(void)updateConstraints {
+    // Autolayout
+    
+    self.stackView = [[UIStackView alloc]init];
+    self.stackView.translatesAutoresizingMaskIntoConstraints = false;
+    self.stackView.axis = UILayoutConstraintAxisHorizontal;
+    self.stackView.distribution = UIStackViewDistributionFillEqually;
+
+//
+    [self.view addSubview:self.stackView];
+//
+//    [NSLayoutConstraint activateConstraints:@[
+//        [self.stackView.topAnchor constraintEqualToAnchor:self.view.topAnchor],
+//        [self.stackView.bottomAnchor constraintEqualToAnchor:self.view.bottomAnchor constant:-20],
+//        [self.stackView.leadingAnchor constraintEqualToAnchor:self.view.leadingAnchor],
+//        [self.stackView.trailingAnchor constraintEqualToAnchor:self.view.trailingAnchor constant:-20],
+//    ]];
     
 }
 

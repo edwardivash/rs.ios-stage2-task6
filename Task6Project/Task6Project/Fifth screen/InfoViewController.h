@@ -1,8 +1,8 @@
 //
-//  TableViewCell.h
+//  InfoViewController.h
 //  Task6Project
 //
-//  Created by Эдуард on 6/22/20.
+//  Created by Эдуард on 6/23/20.
 //  Copyright © 2020 Eduard Ivash. All rights reserved.
 //
 
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface TableViewCell : UITableViewCell 
+@interface InfoViewController : UIViewController
 
 @end
 
